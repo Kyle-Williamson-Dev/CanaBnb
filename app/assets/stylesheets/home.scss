@@ -2,24 +2,60 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  height: 100%;
 }
 
 // Hero Section //
 
 .hero {
   display: flex;
+  position: fixed;
 }
 
 .hero-box {
+  position: fixed;
   margin: 0;
   padding: 150px;
 }
 
+.hero-text {
+  text-align: center;
+}
+
+.hero-text h1 {
+  color: #00ab0b;
+}
+
+.hero-text h3 {
+  padding: 0 0 15px 0;
+}
+
+.green {
+  color: #00ab0b;
+}
+
 button {
-  padding: 15px;
+  padding: 15px 45px;
   color: #fff;
+  font-size: 16px;
+  font-weight: 400;
   background: #404040;
+  transition: color 0.2s;
+}
+
+button:hover {
+  color: #00ab0b;
+}
+
+.site-footer {
+  margin: 0;
+  height: 30px;
+  bottom: 0;
+  position: fixed;
+  background-color: #404040;
 }
