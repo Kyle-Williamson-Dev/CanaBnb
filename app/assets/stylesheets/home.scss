@@ -6,37 +6,43 @@
   font-family: "Montserrat", sans-serif;
 }
 
-<<<<<<< HEAD
-.navbar navbar-expand-lg navbar-light bg-light {
-  background-color: black;
-}
-=======
 body {
   height: 100%;
+}
+
+// Navbar //
+
+.navbar {
+  display: inline-block;
+  justify-content: space-between;
+}
+
+.navbar-toggler-icon {
+  color: #00ab0b;
 }
 
 // Hero Section //
 
 .hero {
-  display: flex;
-  position: fixed;
-}
-
-.hero-box {
-  position: fixed;
   margin: 0;
-  padding: 150px;
+  padding: 0;
+  height: 100%;
 }
 
-.hero-text {
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.hero-text h1 {
+.hero-content h1 {
   color: #00ab0b;
+  padding: 0 0 15px 0;
 }
 
-.hero-text h3 {
+.hero-content h3 {
   padding: 0 0 15px 0;
 }
 
