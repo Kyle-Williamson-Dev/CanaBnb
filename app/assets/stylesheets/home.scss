@@ -29,6 +29,17 @@ body {
   height: 100%;
 }
 
+.hero-box {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), asset-url('larimerb&w.jpg');
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), asset-url('larimer.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+}
+
 .hero-content {
   position: absolute;
   top: 50%;
@@ -40,10 +51,11 @@ body {
 .hero-content h1 {
   color: #00ab0b;
   padding: 0 0 15px 0;
+  font-weight: 700;
 }
 
 .hero-content h3 {
-  padding: 0 0 15px 0;
+  color: white;
 }
 
 .green {
@@ -51,16 +63,18 @@ body {
 }
 
 button {
-  padding: 15px 45px;
-  color: #fff;
+  padding: 10px 45px;
+  color: #000;
   font-size: 16px;
-  font-weight: 400;
-  background: #404040;
+  font-weight: 700;
+  background: #fff;
+  border: none;
+  border-radius: 25px !important;
   transition: color 0.2s;
 }
 
 button:hover {
-  color: #00ab0b;
+  color:#00ab0b;
 }
 
 .site-footer {
