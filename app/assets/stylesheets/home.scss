@@ -25,15 +25,16 @@ body {
   padding: 24px 26px;
   text-decoration: none;
   font-size: 17px;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: #252525;
+  color: #00ab0b;
 }
 
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color:#00ab0b;
   color: white;
 }
 
