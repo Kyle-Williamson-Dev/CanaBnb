@@ -14,28 +14,21 @@
 
   <!--Navbar-->
 
-<div class="topnav" id="myTopnav">
-  <a href="#home" class="darklink">Home</a>
-  <a href="#becomeahost" class="darklink">Become a host</a>
-  <a href="#browse" class="darklink">Browse</a>
-  <a href="#about" class="darklink">About</a>
-  <a href="#signin" class="darklink" style="float:right">Sign in</a>
-  <a href="#signup" class="signup" style="float:right">Sign up</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-  <ul class="topnav">
-    <% if account_signed_in? %>
-      <li class="darklink">
-        <%= link_to 'A user is signed in!', '#', class: 'login-alert' %>
-      </li>
-    <% else %>
-      <li class="darklink">
-        <%= link_to 'No user is signed in :(', '#', class: 'login-alert' %>
-      </li>
-    <% end %>
-  </ul>
-</div>
+<header>
+
+  <nav class="navbar">
+    <h1 class="logo">Logo</h1>
+    <ul class="nav-links">
+      <li class="nav-item"><a href="#">Home</a></li>
+      <li class="nav-item"><a href="#">Browse</a></li>
+      <li class="nav-item"><a href="#">Become a host</a></li>
+      <li class="nav-item"><a href="#">About</a></li>
+      <li class="nav-item"><a href="#">Log in</a></li>
+      <li class="nav-item"><a href="#">Join us!</a></li>
+    </ul>
+  </nav>
+
+</header>
 
 <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
