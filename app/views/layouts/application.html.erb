@@ -14,21 +14,17 @@
 
   <!--Navbar-->
 
-<header>
-
-  <nav class="navbar">
-    <h1 class="logo">Logo</h1>
-    <ul class="nav-links">
-      <li class="nav-item"><a href="#">Home</a></li>
-      <li class="nav-item"><a href="#">Browse</a></li>
-      <li class="nav-item"><a href="#">Become a host</a></li>
-      <li class="nav-item"><a href="#">About</a></li>
-      <li class="nav-item"><a href="#">Log in</a></li>
-      <li class="nav-item"><a href="#">Join us!</a></li>
-    </ul>
-  </nav>
-
-</header>
+<nav class="navbar">
+  <h1 class="logo">Logo</h1>
+  <ul class="nav-links">
+    <li class="nav-item"><a href="#">Home</a></li>
+    <li class="nav-item"><a href="#">Browse</a></li>
+    <li class="nav-item"><a href="#">Become a host</a></li>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Log in</a></li>
+    <li class="nav-item"><a href="#">Join us!</a></li>
+  </ul>
+</nav>
 
 <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
@@ -38,5 +34,6 @@
 <% end %>
 
     <%= yield %>
+    
   </body>
 </html>
