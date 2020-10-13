@@ -2,6 +2,12 @@
 
 // Navbar //
 
+.logo {
+  color: #00ab0b;
+  margin: 0;
+  padding: 0;
+}
+
 .navbar {
   position: fixed;
   background-color: #333;
@@ -10,12 +16,6 @@
   max-width: 100%;
   z-index: 1000;
   overflow: hidden;
-}
-
-.logo {
-  color: #00ab0b;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-links {
@@ -30,7 +30,7 @@
   display: inline;
 }
 
-.nav-item a {
+.navlink {
   text-decoration: none;
   color: #fff;
   font-size: 18px;

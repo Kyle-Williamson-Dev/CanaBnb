@@ -17,12 +17,28 @@
 <nav class="navbar">
   <h1 class="logo">Logo</h1>
   <ul class="nav-links">
-    <li class="nav-item"><a href="#">Home</a></li>
-    <li class="nav-item"><a href="#">Browse</a></li>
-    <li class="nav-item"><a href="#">Become a host</a></li>
-    <li class="nav-item"><a href="#">About</a></li>
-    <li class="nav-item"><a href="#">Log in</a></li>
-    <li class="nav-item"><a href="#">Join us!</a></li>
+    <% if account_signed_in? %>
+      <li class="nav-item">
+        <%= link_to 'Home', home_index_path, class: "navlink" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Browse', class: "navlink" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Become a host', class: "navlink" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'About', class: "navlink" %>
+      </li>
+    <% else %>
+      <li class="">
+      <li class="nav-item">
+        <%= link_to 'Join us!', new_account_registration_path, class: "navlink" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Log in', new_account_session_path, class: "navlink" %>
+      </li>
+    <% end %>
   </ul>
 </nav>
 
