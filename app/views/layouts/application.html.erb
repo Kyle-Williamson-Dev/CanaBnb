@@ -15,7 +15,9 @@
   <!--Navbar-->
 
 <nav class="navbar">
-  <h1 class="logo">Logo</h1>
+  <h1 class="logo">
+    <%= link_to 'Logo', home_index_path, class: 'logo-link' %>
+  </h1>
   <ul class="nav-links">
     <% if account_signed_in? %>
       <li class="nav-item">
@@ -30,8 +32,10 @@
       <li class="nav-item">
         <%= link_to 'About', class: "navlink" %>
       </li>
+      <li class="nav-item">
+        <%= link_to 'Sign out', destroy_account_session_path, method: :delete, class: "navlink" %>
+      </li>
     <% else %>
-      <li class="">
       <li class="nav-item">
         <%= link_to 'Join us!', new_account_registration_path, class: "navlink" %>
       </li>
@@ -42,12 +46,12 @@
   </ul>
 </nav>
 
-<% if notice.present? %>
+<!-- <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
 <% end %>
 <% if alert.present? %>
   <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+<% end %> -->
 
     <%= yield %>
     

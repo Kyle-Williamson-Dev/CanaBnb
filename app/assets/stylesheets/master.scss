@@ -8,6 +8,17 @@
   padding: 0;
 }
 
+.logo-link {
+  color: #00ab0b;
+  margin: 0; 
+  padding: 0;
+}
+
+.logo-link:hover {
+  text-decoration: none;
+  color: #00ab0b;
+}
+
 .navbar {
   position: fixed;
   background-color: #333;
@@ -41,4 +52,56 @@
 .nav-item a:hover {
   color: #00ab0b;
   text-decoration: none;
+}
+
+
+// Sign in and Sign up form styles //
+
+.signin-signup-body {
+  background-color: #555;
+}
+
+.signin-signup {
+  position: absolute;
+  background-color: #333;
+  color: #00ab0b;
+  top: 50%;
+  left: 50%;
+  padding: 100px 80px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid #00ab0b
+}
+
+.signin-signup h2 {
+  font-size: 3.5em;
+  padding: 0 0 20px 0;
+}
+
+.btn {
+  padding: 20px 0;
+}
+
+#btn {
+  background-color: #fff;
+  color: #000;
+  margin: 20px 0;
+}
+
+#btn:hover {
+  background-color: #00ab0b;
+  color: #fff;
+}
+
+.field {
+  padding: 10px 0;
+}
+
+.field-label {
+  color: #fff;
+}
+
+.field-box {
+  color: #fff;
+  background-color: #555;
 }
