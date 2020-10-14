@@ -58,9 +58,23 @@
 
 .signin-signup-body {
   background-color: #555;
+  margin: 0;
+  padding: 0;
 }
 
-.signin-signup {
+.signup {
+  position: absolute;
+  background-color: #333;
+  color: #00ab0b;
+  top: 55%;
+  left: 50%;
+  padding: 40px 20px;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border: 1px solid #00ab0b;
+}
+
+.signin {
   position: absolute;
   background-color: #333;
   color: #00ab0b;
@@ -72,8 +86,13 @@
   border: 1px solid #00ab0b;
 }
 
-.signin-signup h2 {
+.signin h2 {
   font-size: 3.5em;
+  padding: 0 0 20px 0;
+}
+
+.signup h2 {
+  font-size: 3.0em;
   padding: 0 0 20px 0;
 }
 
