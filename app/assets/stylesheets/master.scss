@@ -2,16 +2,34 @@
 
 // Navbar //
 
-.logo {
-  color: #00ab0b;
+header {
+  -webkit-box-shadow: 0 8px 16px -6px #000;
+    -moz-box-shadow: 0 8px 16px -6px #000;
+    box-shadow: 0 8px 16px -6px #000;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  position: relative;
   margin: 0;
   padding: 0;
+}
+
+.logo {
+  color: #00ab0b;
+  background-color: #333;
+  margin: 0;
+  padding: -15px;
+  text-align: center;
+  z-index: 1000;
 }
 
 .logo-link {
   color: #00ab0b;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .logo-link:hover {
@@ -20,9 +38,10 @@
 }
 
 .navbar {
-  position: fixed;
+  position: absolute;
   background-color: #333;
-  padding: none;
+  padding: 0;
+  margin: 0;
   width: 100%;
   max-width: 100%;
   z-index: 1000;
@@ -54,13 +73,40 @@
   text-decoration: none;
 }
 
+.nav-toggle {
+  display: none;
+}
+
+
+// Nav media queries //
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    position: absolute;
+    background-color: #333;
+    padding: none;
+    width: 100%;
+    max-width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+    display: none !important;
+  }
+
+  .nav-toggle:checked ~ nav {
+    display: block !important;
+  }
+}
+
+@media only screen and (min-width: 601px){
+  .nav-toggle-label {
+    position: absolute;
+    float: right;
+  }
+}
+
 // Sign in and Sign up form styles //
 
 .signin-signup-body {
-  // background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-  // asset-url("housepic.jpg");
-  // background-size: cover;
-  // background-repeat: no-repeat;
   background-color: #555;
   margin: 0;
   padding: 0;
@@ -76,18 +122,20 @@
   transform: translate(-50%, -50%);
   text-align: center;
   border: 1px solid #00ab0b;
+  border-radius: 20px;
 }
 
 .signin {
   position: absolute;
   background-color: #333;
   color: #00ab0b;
-  top: 50%;
+  top: 53%;
   left: 50%;
   padding: 80px 60px;
   transform: translate(-50%, -50%);
   text-align: center;
   border: 1px solid #00ab0b;
+  border-radius: 20px;
 }
 
 .signin h2 {
@@ -97,6 +145,7 @@
 
 .signup h2 {
   font-size: 3.0em;
+  margin: 0;
   padding: 0 0 20px 0;
 }
 
