@@ -13,11 +13,12 @@
   <body>
 
   <!--Navbar-->
-
+<header>
 <nav class="navbar">
   <h1 class="logo">
     <%= link_to 'Logo', home_index_path, class: 'logo-link' %>
   </h1>
+  <input type="checkbox" class="nav-toggle">
   <ul class="nav-links">
     <% if account_signed_in? %>
       <li class="nav-item">
@@ -45,6 +46,7 @@
     <% end %>
   </ul>
 </nav>
+</header>
 
 <!-- <% if notice.present? %>
   <p class="alert alert-info"><%= notice %></p>
