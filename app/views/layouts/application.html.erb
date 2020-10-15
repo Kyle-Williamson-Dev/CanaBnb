@@ -16,44 +16,41 @@
 
 <header>
 
-  <div class="row">
-    <h1 class="logo col-4">
-      <%= link_to 'CannaBnb', home_index_path, class: 'logo-link' %>
-    </h1>
-    <input type="checkbox" class="nav-toggle" id="nav-toggle">
-    <nav class="navbar col-8">
-      <ul class="nav-links">
-        <% if account_signed_in? %>
-          <li class="nav-item">
-            <%= link_to 'Home', home_index_path, class: "navlink" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Browse', class: "navlink" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Become a host', class: "navlink" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'About', class: "navlink" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Sign out', destroy_account_session_path, method: :delete, class: "navlink" %>
-          </li>
-        <% else %>
-          <li class="nav-item">
-            <%= link_to 'Join us!', new_account_registration_path, class: "navlink" %>
-          </li>
-          <li class="nav-item">
-            <%= link_to 'Log in', new_account_session_path, class: "navlink" %>
-          </li>
-        <% end %>
-      </ul>
-    </nav>
-    <label for="nav-toggle" class="nav-toggle-label">
-      <span>X</span>
-    </label>
-  </div>
-  
+  <h1 class="logo">
+    <%= link_to 'CannaBnb', home_index_path, class: 'logo-link' %>
+  </h1>
+  <input type="checkbox" class="nav-toggle" id="nav-toggle">
+  <nav class="navbar">
+    <ul class="nav-links">
+      <% if account_signed_in? %>
+        <li class="nav-item">
+          <%= link_to 'Home', home_index_path, class: "navlink" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Browse', class: "navlink" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Become a host', class: "navlink" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'About', class: "navlink" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Sign out', destroy_account_session_path, method: :delete, class: "navlink" %>
+        </li>
+      <% else %>
+        <li class="nav-item">
+          <%= link_to 'Join us!', new_account_registration_path, class: "navlink" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to 'Log in', new_account_session_path, class: "navlink" %>
+        </li>
+      <% end %>
+    </ul>
+  </nav>
+  <label for="nav-toggle" class="nav-toggle-label">
+    <span>X</span>
+  </label>
 </header>
 
 <!-- <% if notice.present? %>

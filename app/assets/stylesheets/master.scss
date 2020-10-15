@@ -10,26 +10,18 @@ header {
   margin: 0;
 }
 
-.row {
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
-
 .logo {
   color: #00ab0b;
   background-color: #333;
   margin: 0;
-  padding: -15px;
+  padding: 0;
   text-align: center;
-  z-index: 1000;
 }
 
 .logo-link {
   color: #00ab0b;
   margin: 0;
   padding: 0;
-  width: 100%;
 }
 
 .logo-link:hover {
@@ -38,14 +30,13 @@ header {
 }
 
 .navbar {
-  position: absolute;
   background-color: #333;
   padding: 0;
-  margin: 0;
   width: 100%;
   max-width: 100%;
   z-index: 1000;
   overflow: hidden;
+  text-align: center;
 }
 
 .nav-links {
