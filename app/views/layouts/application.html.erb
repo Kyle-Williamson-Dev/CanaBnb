@@ -29,13 +29,13 @@
           <%= link_to 'Home', home_index_path, class: "navlink" %>
         </li>
         <li class="navitem" id="getsborder">
-          <%= link_to 'Browse', class: "navlink" %>
+          <%= link_to 'Browse', places_index_path, class: "navlink" %>
         </li>
-        <li class="navitem" id="getsborder">
+        <!-- <li class="navitem" id="getsborder">
           <%= link_to 'Become a host', class: "navlink" %>
-        </li>
+        </li> -->
         <li class="navitem" id="getsborder">
-          <%= link_to 'About', class: "navlink" %>
+          <%= link_to 'About', about_index_path, class: "navlink" %>
         </li>
         <li class="navitem">
           <%= link_to 'Sign out', destroy_account_session_path, method: :delete, class: "navlink" %>
