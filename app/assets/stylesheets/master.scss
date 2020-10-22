@@ -39,7 +39,7 @@ header {
 
 nav {
   position: fixed;
-  background-color: #333;
+  background-color: #696969;
   z-index: 1000;
   padding: 14px 16px;
   width: 100%;
@@ -65,8 +65,9 @@ nav ul {
 
 .navlink {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   font-size: 18px;
+  font-weight: 500;
   text-transform: uppercase;
   height: 60px;
   text-align: center;
@@ -91,7 +92,7 @@ nav ul {
 @media only screen and (max-width: 600px) {
   nav {
     position: absolute;
-    background-color: #333;
+    background-color:  #e0e0e0;
     padding: none;
     width: 100%;
     max-width: 100%;
@@ -115,7 +116,7 @@ nav ul {
 // Sign in and Sign up form styles //
 
 .signin-signup-body {
-  background-color: #555;
+  background-color: #555555;
   margin: 0;
   padding: 0;
 }
@@ -127,6 +128,7 @@ nav ul {
   top: 55%;
   left: 50%;
   padding: 20px 20px;
+  margin-top: 30px;
   transform: translate(-50%, -50%);
   text-align: center;
   border: 1px solid #00ab0b;
@@ -139,7 +141,7 @@ nav ul {
   color: #00ab0b;
   top: 53%;
   left: 50%;
-  padding: 80px 60px;
+  padding: 60px 40px;
   transform: translate(-50%, -50%);
   text-align: center;
   border: 1px solid #00ab0b;

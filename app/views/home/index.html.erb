@@ -4,14 +4,35 @@
 <!--Hero section-->
 
 <section class="hero">
-
-  <div class="hero-box">
-    <div class="hero-content">
-      <h1>CannaBnb</h1>
-      <h3>Wake up and smell the <span class="green">green</span>.</h3>
+  <% if account_signed_in? %>
+    <div class="hero-box">
+      <div class="hero-content">
+        <h1>CannaBnb</h1>
+        <h3>Wake up and smell the <span class="green">green</span>.</h3> 
+      </div>
       <br>
-      <button>Enter</button>  
+      <br>
+      <div class="searchbar-box">
+        <span class="fa fa-search searchbar-feedback">
+          <input type="text" class="searchbar" placeholder="Find a CannaBnb">
+            <div class="searchbar-box-append">
+              <button class="btn btn-secondary" type="button">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+        </span>
+      </div>
     </div>
-  </div>
+    <div class="">
+  <% else %>
+    <div class="hero-box">
+      <div class="hero-content">
+        <h1>CannaBnb</h1>
+        <h3>Wake up and smell the <span class="green">green</span>.</h3>
+        <br>
+        <button>Enter</button>  
+      </div>
+    </div>
+  <% end %>
   
 </section>

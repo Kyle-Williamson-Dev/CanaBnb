@@ -20,7 +20,7 @@ body {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    asset-url("larimerb&w.jpg");
+    asset-url("larimer.jpg");
   // background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), asset-url('larimer.jpg');
   background-size: cover;
   background-position: center;
@@ -30,14 +30,14 @@ body {
 
 .hero-content {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
 }
 
 .hero-content h1 {
-  color: #00ab0b;
+  color: #fff;
   padding: 0 0 15px 0;
   font-weight: 700;
 }
@@ -55,10 +55,18 @@ button {
   color: #000;
   font-size: 16px;
   font-weight: 700;
-  background: #fff;
+  background: #cccccc;
   border: none;
   border-radius: 25px !important;
   transition: color 0.2s;
+}
+
+.searchbar {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 button:hover {
