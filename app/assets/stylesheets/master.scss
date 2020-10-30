@@ -39,7 +39,7 @@ header {
 
 nav {
   position: fixed;
-  background-color: #696969;
+  background-color: #e6e6e6;
   z-index: 1000;
   padding: 14px 16px;
   width: 100%;
@@ -92,7 +92,7 @@ nav ul {
 @media only screen and (max-width: 600px) {
   nav {
     position: absolute;
-    background-color:  #e0e0e0;
+    background-color: #e0e0e0;
     padding: none;
     width: 100%;
     max-width: 100%;
