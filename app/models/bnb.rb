@@ -1,0 +1,2 @@
+class Bnb < ApplicationRecord
+end
