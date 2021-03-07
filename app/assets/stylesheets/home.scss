@@ -50,7 +50,7 @@ body {
   color: #00ab0b;
 }
 
-button {
+.about_button {
   padding: 10px 45px;
   color: #000;
   font-size: 16px;
@@ -58,7 +58,7 @@ button {
   background: #cccccc;
   border: none;
   border-radius: 25px !important;
-  transition: color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .searchbar {
@@ -69,6 +69,6 @@ button {
   text-align: center;
 }
 
-button:hover {
-  color: #00ab0b;
+.about_button:hover {
+  background-color: #00ab0b;
 }
